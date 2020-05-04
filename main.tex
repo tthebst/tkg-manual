@@ -43,6 +43,22 @@ Tanzu Mission Control is the central control hub for your Kubernetes clusters \c
   \item AWS Account
 \end{itemize}
 
+\subsection{General Overview}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{figures/overview-mc.pdf}
+\caption{Architecture created by automation}
+\label{fig:arch}
+\end{figure}
+
+Figure \ref{fig:arch} provides an illustration of the created architecture by the automation. Cloud Assembly will deploy a Virtual Machine inside your vCenter and install all the software needed for TKG. After the software installation it automatically deploy a management cluster to vSphere and AWS. When the process is complete you will have access to both management clusters and you are able to create clusters as you wish. 
+
+
+\subsection{Setup}
+
+\subsubsection{Connect Cloud Assembly and vCenter}
+
 
 \section{Troubleshooting}
 ``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
