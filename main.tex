@@ -182,9 +182,23 @@ Now we have everything setup to deploy TKG. As an attachment to this PDF you wil
   \item \verb|AWS_SECRET_KEY_COMPUTE:| Secret Key of your AWS account on where to deploy TKG
   \item \verb|AWS_COMPUTE_REGION:| Region where to deploy
   \item \verb|TMC_API_TOKEN:| Tanzu Mission Control Token created in \ref{tmctoken}
+  \item \verb|tkg-cli:| Name of tkg-cli file in s3. Can be left default
+  \item \verb|haproxy-ova:| Name of haproxy-ova file in s3. Can be left default
+  \item \verb|tkg-ova:| Name of tkg-ova file in s3. Can be left default
+  \item \verb|datastore:| Datastore to use
+  \item \verb|vcenterIP:| IP of your vCenter
+  \item \verb|vcenterUser:| User of your vCenter
+  \item \verb|vcenterPassword:| Password of your vCenter
+  \item \verb|resourcePool:| Resourcepool to deploy to
+  \item \verb|sshKey:| Public Key to connect to TKG nodes
+
 \end{itemize}
 \end{enumerate}
-Now you can see your deployment under the Cloud Assembly tab Deployments. You will see the IP of your newly created jumpbox. You can now connect to the jumpbox, but the TKG installation wil take aprox. 45-60min.
+
+\noindent {\bf Note:} If you don't want to deploy to AWS/vSphere you can fill in an invalid value. This leads to not deploying this provider. The same goes for TMC.
+\\
+
+\noindent Now you can see your deployment under the Cloud Assembly tab Deployments. You will see the IP of your newly created jumpbox. You can now connect to the jumpbox, but the TKG installation wil take aprox. 45-60min.
 
 
 
